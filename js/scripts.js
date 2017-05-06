@@ -9,4 +9,3 @@ list.addEventListener('click', function(e) {
 add.addEventListener('click', function(e) {
   list.innerHTML +='<li>item</li>';
 });
-
