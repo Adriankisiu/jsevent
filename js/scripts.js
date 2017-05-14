@@ -1,12 +1,10 @@
 var list = document.getElementById('list'),
 	add = document.getElementById('addElem');
 
-list.addEventListener('click', function(e) {
-	var insert = document.getElementsByTagName("li");
-	var changeinsert = insert[1].innerHTML += '0';
-});
-
-add.addEventListener('click', function(e) {
-  list.innerHTML +='<li>item</li>';
+add.addEventListener('click', function() {
+    var element = document.createElement('li');
+    var insert = document.getElementsByTagName("li").length;
+    element.innerHTML = 'item ' +insert;
+    list.appendChild(element)
 });
 
